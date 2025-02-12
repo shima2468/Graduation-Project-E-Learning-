@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+:root {
+  --body: #fff;
+  --black: #000;
+  --white: #fff;
+  --theme: #84BA3F;
+  --theme2: #20222E;
+  --header: #385469;
+  --text: #5C707E;
+  --text-2: #ffffffcc;
+  --border: #E5E5E5;
+  --border2: #242449;
+  --border3: #5262FF;
+  --bg: #F4EEE5;
+  --bg2: #EFF5F6;
+  --bg3: #70A6B1;
+  --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* general Styling  */
+html, body {
+  overflow-x: hidden;
+}
+
+.main-color{
+  color: var(--theme2);
+}
+
+.node-bg{
+  background-color: var(--bg);
+}
+
+.border-second-color{
+  border-top-color:var(--theme) ;
+}
+.second-color{
+  color:var(--theme);
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 6px; /* عرض شريط التمرير */
+}
+
+body::-webkit-scrollbar-track {
+  background: #d1e6b6; /* لون المسار */
+  border-radius: 6px; /* زوايا مدورة */
+}
+
+body::-webkit-scrollbar-thumb {
+  background:  #84BA3F; /* تدرج لوني */
+  border-radius: 6px; /* زوايا مدورة */
+  border: 3px solid #84BA3F; /* إطار حول المقبض */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #84BA3F; /* لون عند التمرير */
+}
+.Section-header{
+  position: relative;
+}
+.Section-header::after{
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background: linear-gradient(83deg, rgba(132, 186, 63, 1) 0%, rgba(132, 186, 63, 1) 33%, transparent 100%);
+  width: 130px;
+  height: 1.7px;
+}
+
+
+
+
+
+
+/* Nav */
+.upper-Nav{
+  background-color: var(--theme2);
+}
+
+.call-to-action{
+  background-color: var(--theme);
+}
+.theme-btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none !important;
+  background-color: var(--theme);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 12px 20px;
+  transition: all 0.4s ease-in-out;
+  letter-spacing: 0;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1;
+  z-index: 9;
+  text-transform: capitalize;
+}
+
+.backdrop-glass {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+  border-radius: 16px; 
+}
+/* Nav */
+
+/* Hero */
+
+
+
+
+
+
+.Icon{
+   color: var(--theme);
+}
+
+/* About Section Start*/
+
+.animate-image {
+
+  animation: moveLeftAndBack 2s ease-in-out infinite;
+
+}
+
+@keyframes moveLeftAndBack {
+  0% {
+    transform: translateX(0); /* المكان الأصلي */
+  }
+  50% {
+    transform: translateX(-50px); /* التحرك 50px إلى الشمال */
+  }
+  100% {
+    transform: translateX(0); /* العودة إلى المكان الأصلي */
+  }
+}
+
+/* About Section End*/
+
+
+
+
+
+.Courses-card{
+     background-image: url("../src/assets/cardImg1.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+    
+}
+.Courses-card::before{
+  content: "";
+  background-image: url('assets/hung.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top:-1%;
+  left: 45%;
+  
+
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ثلاث أعمدة */
+  column-gap: 20px; /* الفجوة الأفقية */
+  row-gap: 0px; /* الفجوة العمودية الافتراضية */
+  padding: 20px; /* البادينج حول الشبكة */
+}
+
+/* عندما يكون العرض أقل من 1020 بكسل */
+@media (max-width: 1024px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr); /* عمودين */
+    padding:0 120px; /* تصغير البادينج */
+  }
+}
+
+/* عندما يكون العرض أقل من 768 بكسل */
+@media (max-width: 768px) {
+  .grid1 {
+    grid-template-columns: 1fr; /* عمود واحد */
+    padding: 120px; 
+  }
+}
+
+/*courses Section Start  */
+
+/* Teacher Section Start */
+#Teachers .Teacher-header{
+  font-family:'Pangolin',sans-serif  ;
+}
+
+#Teachers .social:hover i{
+color:var(--white);
+}
+
+
+.slick-dots .slick-active div {
+  background: #84BA3F !important; 
+ 
+}
+.slick-dots li.slick-active {
+  position: relative;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #84BA3F; 
+  font-size: 10px; 
+  margin: 12px;
+}
+
+.slick-dots li.slick-active::after {
+  content: '';
+  position: absolute;
+  padding: 12px;
+  top: 150%; 
+  left: -40%; 
+  width: 20px; 
+  height: 20px; 
+  border: 2px solid #84BA3F; 
+  border-radius: 50%;
+ 
+}
+
+
+@media (max-width: 1024px) {
+  .card-teach {
+    margin-right: 20px; 
+  }
+
+  .slick-slide {
+    padding-right: 20px; 
+}
+}
+
+
+
+/* Teacher Section End */
+
+
+/* Services Section Start */
+#Services .ServicesCards1{
+   position: relative;
+}
+
+#Services .ServicesCards1::after{
+  content: "";
+  position: absolute;
+  background-image: url("../src/assets/DotetedLine.png");
+  background-size: cover;
+  background-position: center;
+  width: 77%;
+  height: 45%;
+  left:67%;
+  top:25%;
+}
+#Services .ServicesCards2{
+   position: relative;
+}
+
+#Services .ServicesCards2::after{
+  content: "";
+  position: absolute;
+  background-image: url("../src/assets/DotetedLine2.png");
+  background-size: cover;
+  background-position: center;
+  width: 79%;
+  height: 45%;
+  left:65%;
+  top:27%;
+}
+@media (max-width: 1024px) and (min-width: 640px){ 
+  #Services .ServicesCards1::after {
+    display: none;
+  }
+  #Services .item1{
+    order: 2;
+  }
+  #Services .item2{
+    order: 3;
+  }
+}
+@media (max-width: 1024px) and (min-width: 640px) {
+  #Services .ServicesCards2::after {
+    display: none;
+  }
+  #Services .item1{
+    order: 2;
+  }
+  #Services .item2{
+    order: 3;
+  }
+}
+/* Services Section End */
+
+/* contact section start */
+
+#Contact .contact-img{
+   background-image: url('assets/girl-learning-language.jpg');
+   background-repeat: no-repeat;
+   /* background-position: center; */
+   background-size: cover;
+}
+
+#Contact .contact-heading{
+  position: relative;
+  z-index: 10;
+}
+
+#Contact .contact-heading::before{
+  content: "";
+  width: 310px;
+  height: 30px;
+  position: absolute;
+  background-color: #84BA3F;
+  z-index:-1;
+  top:40%;
+}
+/* Footer */
+
+.border-navyBlue {
+  border-color: var(--theme2);
+  
+}
+
+.Icon-navyBlue,.main-text{
+  color: var(--theme2);
+}
+
+.Icon-navyBlue:hover{
+  color: white;
+}
+
+
+
+.footer-heading{
+  position: relative;
+
+}
+
+
+.footer-heading::after{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+ 
+  background: linear-gradient(83deg, rgba(132, 186, 63, 1) 0%, rgba(132, 186, 63, 1) 33%, transparent 100%);
+  width: 130px;
+  height: 2px;
+}
+
+
+/* hero section start */
+
+.hero-content .right-section::before {
+  content: '';
+  background-image: url('./assets/line-shape-2-green.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: rotate(-55deg);
+  width: 60%;
+  height: 60%;
+  left: 6%;
+  top: -20%;
+  display: block;
+
+  /* تصغير السهم للشاشات المتوسطة */
+  @media (max-width: 1024px) { /* يشمل md و sm */
+      display:none;
+  }
+
+  /* تصغير أكبر للشاشات الصغيرة جدًا */
+  @media (max-width: 768px) {
+    width: 20%;
+    height: 20%;
+    left: -4%;
+    top: 7%;
+    transform: rotate(-20deg);
+  }
+
+  /* تكبير السهم للشاشات الكبيرة */
+  @media (min-width: 1280px) {
+    width: 70%;
+    height: 70%;
+    left: 5%;
+    top: -25%;
+  }
+}
+
+
+.hero-desc{
+  position: relative;
+}
+
+.hero-desc {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-desc {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-desc {
+    margin: 0 !important;
+    text-align: center; 
+  }
+}
+
+/* @media (max-width: 636px){
+  .hero-desc {
+    margin: 0 !important;
+    text-align: center; 
+  }
+  .hero-heading{
+    font-size: 3rem;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  .hero-p{
+    font-size: 0.875rem;
+  }
+  .hero-button{
+      justify-content: center;
+      margin-top: 15px;
+  }
+  .hero-button .button1{
+      padding: 0.75rem  3rem;
+  }
+} */
+
+
+/* Hero section end */
+
+.buble{
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+/* Services */
+
+.bg-icon{
+  background-image: url("../src/assets/SerBgG.png");
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+/* Quilty Section */
+
+.Quailty-bg {
+  background-image: url("../src/assets/frame-3.png");
+  background-repeat: no-repeat;
+ /* background-position: center; */
+ 
+}
+
+/* Exelent Student */
+
+.StudentEx {
+  background-image: url("../src/assets/Group 1663.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* استخدام contain بدلاً من 100% 100% */
+  display: flex;
+  align-items: center; /* محاذاة المحتوى عموديًا داخل الفقاعة */
+  justify-content: center;
+  text-align: center;
+  min-height: 300px;
+  padding: 20px;
+}
+.StudentEx2 {
+  background-image: url("../src/assets/Group\ 1664.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* استخدام contain بدلاً من 100% 100% */
+  display: flex;
+  align-items: center; /* محاذاة المحتوى عموديًا داخل الفقاعة */
+  justify-content: center;
+  text-align: center;
+  min-height: 300px;
+  padding: 20px;
+}
+
+/* Acadmic Stage */
+
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .buble {
+    width: 100%; /* يجعل كل كارت يأخذ العرض الكامل */
+    margin-bottom: 1rem;
+    
+  }
+}
