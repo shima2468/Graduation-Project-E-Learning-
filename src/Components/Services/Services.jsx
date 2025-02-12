@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faChalkboardTeacher, faLaptop, faClipboardList } from "@fortawesome/free-solid-svg-icons";
 export default function Services() {
   return (
-    <section className="xl:mt-[-5%] lg:mt-[-15%] md:mt-[-15%] pb-12" id="Services">
+    <section className=" pb-12" id="Services">
     <div className="container mx-auto p-2">
       <div className="flex flex-col lg:flex-row ms-6 Teacher-header pb-8">
         <h3 className="second-color text-xl font-semibold Section-header uppercase ">

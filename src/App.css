@@ -420,12 +420,12 @@ color:var(--white);
   padding: 0;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .hero-desc {
     margin: 0 !important;
     padding: 0 !important;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .hero-desc {
@@ -434,7 +434,7 @@ color:var(--white);
   }
 }
 
-/* @media (max-width: 636px){
+@media (max-width: 636px){
   .hero-desc {
     margin: 0 !important;
     text-align: center; 
@@ -454,7 +454,16 @@ color:var(--white);
   .hero-button .button1{
       padding: 0.75rem  3rem;
   }
-} */
+  .bgHero{
+    display: none;
+  }
+  .right-section{
+    display: none;
+  }
+  .dots{
+    display: none;
+  }
+}
 
 
 /* Hero section end */
