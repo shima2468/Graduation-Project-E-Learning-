@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <>
     <footer className="bg-[#F6F7FB]   ">
-      <div className="container mx-auto ">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-6">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-2 sm:gap-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 xl:gap-6 lg:gap-5 md:gap-20 py-12 ">
           {/* Logo and About */}
           <div className="space-y-14 ">
             <div className="flex items-center space-x-2 footer-heading">
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className='space-y-14 mt-2'>
+          <div className='space-y-14 ms-12'>
             <h3 className="text-2xl font-semibold text-[#20222E] footer-heading">Quick Links</h3>
             <ul className="mt-4 space-y-4">
               <li>
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
 
           {/* Categories */}
-          <div className='mt-2 space-y-14'>
+          <div className='space-y-14'>
             <h3 className="text-2xl font-semibold text-[#20222E] footer-heading">Categories</h3>
             <ul className="mt-4 space-y-4">
               <li>
@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className='mt-2 space-y-14'>
+          <div className='space-y-14 lg:ms-0 '>
             <h3 className="text-2xl font-semibold text-[#20222E] footer-heading">Newsletter</h3>
             <p className="mt-4  text-[#20222E]">
               Sign up to searing weekly newsletter to get the latest updates.
@@ -119,7 +119,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         
       </div>
-      <div className="mt-16 border-t border-gray-300 pt-4 text-center bg-[#20222E]">
+      <div className=" border-t border-gray-300 pt-4 text-center bg-[#20222E]">
           <p className="text-white text-sm">
             &copy; All Copyright 2024 by <span className="text-[#84BA3F]">Online  Education </span>
           </p>

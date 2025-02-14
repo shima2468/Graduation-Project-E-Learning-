@@ -15,10 +15,11 @@ import Teachers from "../Teachers/Teachers";
 // import Preloader from '../Preloader/Preloader'
 import AcademicStages from "../AcademicStages/AcademicStages";
 import ExStudnts from "../ExStudnts/ExStudnts";
-import Contact from "../Conctact/Conctact";
+
 import Services from "../Services/Services";
 import girl from "../../assets/girl2.png";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import ContactUs from "../ContactUs/ContactUs";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       <ScrollToTop />
       {/* <Preloader/> */}
       {/* Hero Section Start */}
-      <section id="home relative">
+      <section id="home" className="relative">
         <div
           className="bgHero absolute z-[-1] custom-image  lg:block
              right-0  
@@ -116,7 +117,7 @@ export default function Home() {
       <Teachers />
       {/* <Quality/> */}
       <ExStudnts />
-      <Contact />
+      <ContactUs/>
 
       {/* <Activity/> */}
     </>

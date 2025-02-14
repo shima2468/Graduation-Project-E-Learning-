@@ -244,16 +244,6 @@ color:var(--white);
 }
 
 
-@media (max-width: 1024px) {
-  .card-teach {
-    margin-right: 20px; 
-  }
-
-  .slick-slide {
-    padding-right: 20px; 
-}
-}
-
 
 
 /* Teacher Section End */
@@ -454,12 +444,12 @@ color:var(--white);
   .hero-button .button1{
       padding: 0.75rem  3rem;
   }
-  .bgHero{
+  /* .bgHero{
     display: none;
-  }
-  .right-section{
+  } */
+  /* .right-section{
     display: none;
-  }
+  } */
   .dots{
     display: none;
   }
@@ -501,8 +491,8 @@ color:var(--white);
   align-items: center; /* محاذاة المحتوى عموديًا داخل الفقاعة */
   justify-content: center;
   text-align: center;
-  min-height: 300px;
-  padding: 20px;
+  min-height: 270px;
+  
 }
 .StudentEx2 {
   background-image: url("../src/assets/Group\ 1664.png");
@@ -513,10 +503,16 @@ color:var(--white);
   align-items: center; /* محاذاة المحتوى عموديًا داخل الفقاعة */
   justify-content: center;
   text-align: center;
-  min-height: 300px;
-  padding: 20px;
+  min-height: 270px;
+  
 }
 
+.StudentEx p,
+.StudentEx2 p {
+  max-width: 90%; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
 /* Acadmic Stage */
 
 @media (max-width: 1024px) {

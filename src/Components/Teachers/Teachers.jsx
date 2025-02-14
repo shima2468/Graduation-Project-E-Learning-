@@ -21,8 +21,8 @@ export default function Teachers() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          width: "40px",
-          height: "40px",
+          width: "4%",
+          height: "4%",
           background: "#84BA3F",
           borderRadius: "23px",
           border: "1px solid #84BA3F",
@@ -30,7 +30,7 @@ export default function Teachers() {
           position:'absolute',
           top:"-20%",
           right:"1%",
-          padding:"28px",
+          padding:"2%"
           
         }}
         onClick={onClick}
@@ -45,22 +45,22 @@ export default function Teachers() {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
+        className={`${className} `}
         style={{
           ...style,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          width: "40px",
-          height: "40px",
+          width: "4%",
+          height: "4%",
           background: "#84BA3F",
           borderRadius: "23px",
           border: "1px solid #84BA3F",
           cursor: "pointer",
           position:'absolute',
           top:"-20%",
-          left:"88%",
-          padding:"28px"
+          left:"90%",
+          padding:"2%"
         }}
         onClick={onClick}
       >
@@ -144,26 +144,26 @@ export default function Teachers() {
 
   return (
       <>
-        <section className="relative  py-8 px-8 md:px-24" id="Teachers">
-                <div className="container mx-auto py-16 relative ">
+        <section className="relative py-8 " id="Teachers">
+                <div className="container mx-auto py-16 relative px-4">
               
-                <div className='flex flex-col justify-center  Teacher-header'>
-                                <h3 className="second-color text-xl font-semibold Section-header uppercase">
+                <div className='flex flex-col justify-center  Teacher-header md:px-4'>
+                                <h3 className="second-color xl:text-xl lg:text-lg md:text-md sm:text-sm font-semibold Section-header uppercase">
                                 Our teachers
                               </h3>
-                              <h2 className="text-5xl font-bold main-color my-6  tracking-wider ">
+                              <h2 className="xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold main-color my-6  tracking-wider ">
                                    Our Expert teachers
                               </h2>
                 </div>
                
                  
                     {/* <Link to="teachers/teacherDetails"> */}
-                    <div className="w-full py-10grid grid-cols-1 md:grid-cols-4 gap-28 relative">
-                                <Slider {...settings}>
+                    <div className="w-full py-10grid grid-cols-1 xl:grid-cols-4  gap-24 relative">
+                                <Slider {...settings} >
                                   {/* البطاقة الأولى */}
-                                  <div className="relative dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center card-teach">
+                                  <div className="relative  flex flex-col items-center card-teach  xl:p-3 lg:p-2 md:p-1 sm:p-2 w-full">
                                     <a href="#">
-                                      <img className="rounded-lg w-[302px] h-[358px]" src={Teacher1} alt="Teacher 1" />
+                                      <img className="rounded-lg w-full" src={Teacher1} alt="Teacher 1" />
                                     </a>
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
@@ -175,7 +175,7 @@ export default function Teachers() {
                                         </h5>
                                       </a>
                                     </div>
-                                    <div className="absolute top-[3%] right-[10%] flex items-center justify-center group">
+                                    <div className="absolute top-[5%] right-[3%] flex items-center justify-center group w-1/4 ">
                                       <button className="w-10 h-10 border-2 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all duration-300 ease-in-out">
                                         <i className="fas fa-share-alt text-white"></i>
                                       </button>
@@ -194,9 +194,9 @@ export default function Teachers() {
                                   </div>
 
                                   {/* البطاقة الثانية */}
-                                  <div className="relative dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center card-teach">
+                                  <div className="relative  flex flex-col items-center card-teach xl:p-3 lg:p-2 md:p-1  sm:p-2 w-full">
                                     <a href="#">
-                                      <img className="rounded-lg w-[302px] h-[358px]" src={Teacher2} alt="Teacher 2" />
+                                      <img className="rounded-lg w-full" src={Teacher2} alt="Teacher 2" />
                                     </a>
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
@@ -208,7 +208,7 @@ export default function Teachers() {
                                         </h5>
                                       </a>
                                     </div>
-                                    <div className="absolute top-[3%] right-[10%] flex items-center justify-center group">
+                                    <div className="absolute top-[5%] right-[3%] flex items-center justify-center group w-1/4">
                                       <button className="w-10 h-10 border-2 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all duration-300 ease-in-out">
                                         <i className="fas fa-share-alt text-white"></i>
                                       </button>
@@ -227,9 +227,9 @@ export default function Teachers() {
                                   </div>
 
                                   {/* البطاقة الثالثة */}
-                                  <div className="relative dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center card-teach">
+                                  <div className="relative  flex flex-col items-center card-teach xl:p-3 lg:p-2 md:p-1  sm:p-2 w-full">
                                     <a href="#">
-                                      <img className="rounded-lg w-[302px] h-[358px]" src={Teacher4} alt="Teacher 3" />
+                                      <img className="rounded-lg w-full" src={Teacher4} alt="Teacher 3" />
                                     </a>
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
@@ -241,7 +241,7 @@ export default function Teachers() {
                                         </h5>
                                       </a>
                                     </div>
-                                    <div className="absolute top-[3%] right-[10%] flex items-center justify-center group">
+                                    <div className="absolute top-[5%] right-[3%] flex items-center justify-center group w-1/4">
                                       <button className="w-10 h-10 border-2 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all duration-300 ease-in-out">
                                         <i className="fas fa-share-alt text-white"></i>
                                       </button>
@@ -259,9 +259,9 @@ export default function Teachers() {
                                     </div>
                                   </div>
                                   {/* البطاقه الرابعه */}
-                                  <div className="relative dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center card-teach">
+                                  <div className="relative  flex flex-col items-center card-teach xl:p-3 lg:p-2  sm:p-2 md:p-1 w-full">
                                     <a href="#">
-                                      <img className="rounded-lg w-[302px] h-[358px]" src={Teacher3} alt="Teacher 3" />
+                                      <img className="rounded-lg w-full" src={Teacher3} alt="Teacher 3" />
                                     </a>
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
@@ -273,7 +273,7 @@ export default function Teachers() {
                                         </h5>
                                       </a>
                                     </div>
-                                    <div className="absolute top-[3%] right-[10%] flex items-center justify-center group">
+                                    <div className="absolute top-[5%] right-[3%] flex items-center justify-center group w-1/4">
                                       <button className="w-10 h-10 border-2 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all duration-300 ease-in-out">
                                         <i className="fas fa-share-alt text-white"></i>
                                       </button>

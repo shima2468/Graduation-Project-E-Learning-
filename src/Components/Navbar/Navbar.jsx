@@ -30,8 +30,8 @@ export default function Navbar() {
     <>
       <div className="fixed top-0 w-full z-[9999]">
         {/* upper-Nav Section Start */}
-        <div className="upper-Nav bg-gray-900 py-3 text-white text-xs">
-          <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <div className="upper-Nav bg-gray-900 py-3 text-white text-xs hidden md:block">
+          <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 ">
             {/* Left Section */}
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-center md:text-left">
               <span className="flex items-center">
@@ -68,7 +68,7 @@ export default function Navbar() {
 
         {/* Nav Section Start */}
 
-        <div className="bg-white shadow-md py-2 rounded-lg">
+        <div className="bg-white shadow-md py-6 md:py-2 rounded-lg ">
           <nav className="container mx-auto flex flex-wrap justify-between items-center px-4">
             {/* Logo */}
             <div className="flex items-center ">

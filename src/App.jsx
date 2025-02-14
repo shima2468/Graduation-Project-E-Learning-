@@ -7,7 +7,6 @@ import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import SignUp from './Components/SignUp/SignUp'
-import Conctact from './Components/Conctact/Conctact'
 import Teachers from "./Components/Teachers/Teachers";
 import TeacherDetails from "./Components/TeacherDetails/TeacherDetails";
 import Books from './Components/books/books'
@@ -39,6 +38,7 @@ import TeachersList from './Components/TeachersList/TeachersList'
 import ParentsList from './Components/ParentsList/ParentsList'
 import StagesList from './Components/StagesList/StagesList'
 import SectionList from './Components/SectionList/SectionList'
+import ContactUs from './Components/ContactUs/ContactUs'
 
 
 function App() {
@@ -83,7 +83,7 @@ function App() {
        {path:"home", element:<SignUp/>},
        {path:"AcademicStage", element:<AcademicStages/>},
        {path:"courses", element:<Courses/>},
-       {path:"Contact", element:<Conctact/>},
+       {path:"Contact", element:<ContactUs/>},
        { path: "Teachers", element: <Teachers /> },
        { path: "Teachers/teacherDetails", element: <TeacherDetails /> },
        { path: "Book", element: <Books/> },
