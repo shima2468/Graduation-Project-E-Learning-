@@ -23,82 +23,83 @@ export default function Courses() {
   return (
     <>
       
-      <section className="relative py-12 bg-[#F6F7FB]  " id="courses">
-                <div className="container mx-auto px-4 ">
-      <div className="absolute inset-0 w-full h-full -z-10"></div>
-  
-      <div className="flex flex-col  justify-center mb-16">
-        <h3 className="second-color text-xl font-semibold Section-header uppercase">
-            Popular Courses
-        </h3>
-        <h2 className="text-3xl font-bold main-color mt-3 tracking-wider">
-             Discover Your  Course
-        </h2>
-      </div>
-         
-      
-        {/* Courses Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Course Card 1 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <div className="relative -mt-16 w-72 h-40 flex items-center justify-center">
-              <img
-                src={Arabic}
-                alt="Arabic Class"
-                className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
-              />
-            </div>
-            <h2 className="text-xl font-semibold text-gray-900 mt-4">Arabic Class</h2>
-            <p className="text-gray-600 text-sm text-center mt-2">
-            Immerse yourself in the beauty of the Arabic language and uncover its profound cultural heritage, rich history, and timeless elegance.
-            </p>
-            <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
-              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
-              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
-            </div>
-          </div>
+      <section className="relative py-8 bg-[#F6F7FB]" id="courses">
+                      <div className="container mx-auto py-16 relative px-4">
+                        <div className="absolute inset-0 w-full h-full -z-10"></div>
 
-          {/* Course Card 2 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <div className="relative -mt-16 w-72 h-40 flex items-center justify-center">
-              <img
-                src={English}
-                alt="English Class"
-                className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
-              />
-            </div>
-            <h2 className="text-xl font-semibold text-gray-900 mt-4">English Class</h2>
-            <p className="text-gray-600 text-sm text-center mt-2">
-                Master the global language with confidence and enhance your communication skills, opening doors to new opportunities and cultural connections.
+                        <div className="flex flex-col justify-center mb-16 ">
+                          <h3 className="second-color text-xl font-semibold Section-header uppercase">
+                            Popular Courses
+                          </h3>
+                          <h2 className="text-3xl font-bold main-color mt-3 tracking-wider">
+                            Discover Your Course
 
-            </p>
-            <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
-              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
-              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
-            </div>
-          </div>
+                          </h2>
+                        </div>
 
-          {/* Course Card 3 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <div className="relative -mt-16 w-72 h-40 flex items-center justify-center">
-              <img
-                src={Math}
-                alt="Math Class"
-                className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
-              />
-            </div>
-            <h2 className="text-xl font-semibold text-gray-900 mt-4">Math Class</h2>
-            <p className="text-gray-600 text-sm text-center mt-2">
-            Develop critical problem-solving skills and enhance logical thinking through engaging and interactive math activities.
-            </p>
-            <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
-              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
-              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
-            </div>
-          </div>
-        </div>
-                </div>
-    </section>
+                        {/* Courses Grid */}
+                        <div className="w-full grid grid-cols-1 place-items-center  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-8 lg:gap-y-0 md:gap-y-12 gap-y-12">
+                          {/* Course Card 1 */}
+                          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center md:w-full w-2/3 transition-transform transform hover:scale-105 hover:shadow-xl">
+                            <div className="relative -mt-12 w-72 h-40 flex items-center justify-center">
+                              <img
+                                src={Arabic}
+                                alt="Arabic Class"
+                                className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
+                              />
+                            </div>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-4">Arabic Class</h2>
+                            <p className="text-gray-600 text-sm text-center mt-2">
+                              Immerse yourself in the beauty of the Arabic language and uncover its profound cultural heritage.
+                            </p>
+                            <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
+                              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
+                              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
+                            </div>
+                          </div>
+
+                          {/* Course Card 2 */}
+                          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center md:w-full w-2/3 transition-transform transform hover:scale-105 hover:shadow-xl">
+                            <div className="relative -mt-12 w-72 h-40 flex items-center justify-center">
+                              <img
+                                src={English}
+                                alt="English Class"
+                                className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
+                              />
+                            </div>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-4">English Class</h2>
+                            <p className="text-gray-600 text-sm text-center mt-2">
+                              Master the global language with confidence and enhance your communication skills.
+                            </p>
+                            <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
+                              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
+                              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
+                            </div>
+                          </div>
+
+                          {/* Course Card 3 */}
+                          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center md:w-full w-2/3 transition-transform transform hover:scale-105 hover:shadow-xl">
+                            <div className="relative -mt-12 w-72 h-40 flex items-center justify-center">
+                              <img
+                                src={Math}
+                                alt="Math Class"
+                                className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
+                              />
+                            </div>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-4">English Class</h2>
+                            <p className="text-gray-600 text-sm text-center mt-2">
+                              Master the global language with confidence and enhance your communication skills.
+                            </p>
+                            <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
+                              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
+                              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+       </section>
+
     </>
   )
 }

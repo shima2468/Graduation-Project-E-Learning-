@@ -12,11 +12,10 @@ import High from "../../assets/highSchool.jpg"
 export default function AcademicStages() {
 
   return (
-    <section className="relative w-full  py-6" id="AcademicStage">
+    <section className="relative " id="AcademicStage">
    
-                 <div className="container mx-auto "></div>
-  
-                    <div className="flex flex-col items-center justify-center">
+                 <div className="container mx-auto py-16 relative px-4">
+                 <div className="flex flex-col items-center justify-center">
                       <h3 className="second-color text-xl font-semibold Section-header uppercase">
                         Our Programer
                       </h3>
@@ -26,7 +25,7 @@ export default function AcademicStages() {
                     </div>
                   
                     {/* القسم الخاص بالكروت */}
-                    <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-0">
+                    <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-0">
                       {/* الكارت الأول */}
                       <div className="buble relative pb-28" style={{ backgroundImage: `url(${bgImage})` }}>
                         <div className="rounded-t-[900px] flex justify-center">
@@ -80,6 +79,9 @@ export default function AcademicStages() {
                         </button>
                       </div>
                     </div>
+                 </div>
+  
+                    
   </section>
   
 

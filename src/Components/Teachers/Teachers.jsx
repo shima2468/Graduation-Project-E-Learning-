@@ -158,7 +158,7 @@ export default function Teachers() {
                
                  
                     {/* <Link to="teachers/teacherDetails"> */}
-                    <div className="w-full py-10grid grid-cols-1 xl:grid-cols-4  gap-24 relative">
+                    <div className="w-full  xl:grid-cols-4  gap-24 relative">
                                 <Slider {...settings} >
                                   {/* البطاقة الأولى */}
                                   <div className="relative  flex flex-col items-center card-teach  xl:p-3 lg:p-2 md:p-1 sm:p-2 w-full">
