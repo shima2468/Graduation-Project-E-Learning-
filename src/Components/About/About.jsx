@@ -13,11 +13,11 @@ import 'animate.css';
 
 export default function About() {
   return (
-    <section className="relative px-8 md:px-24  " id="about-us">
+    <section className="relative px-8 md:px-24" id="about-us">
       <div>
             <img src={circel} alt="" className="w-[15%] absolute top-[20%] left-[30%]"/>
             <img src={line} alt="" className="absolute left-[7%] top-[5%]" />
-            <img src={leftshap} alt="" className="absolute left-0 xl:w-[50%] xl:h-[90%] " />
+            <img src={leftshap} alt="" className="absolute left-0 xl:w-[50%] xl:h-[100%] " />
             <img src={girlGreen} alt="" className="absolute xl:top-0 lg:top-[3%] right-[5%] animate-image xl:w-[15%] lg:w-[15%]" />
       </div>
     
@@ -27,7 +27,7 @@ export default function About() {
         <img 
           src={About2} 
           alt="About Image" 
-          className="xl:w-[720px] md:w-[110%] lg:w-[500px] md:max-w-[550px] lg:max-w-[750px] animate__animated animate__zoomIn"
+          className="xl:w-[570px] md:w-[110%] lg:w-[500px] md:max-w-[550px] lg:max-w-[750px] animate__animated animate__zoomIn"
         />
       </div>
       <div className="w-full lg:w-1/2 mt-12 lg:mt-0">

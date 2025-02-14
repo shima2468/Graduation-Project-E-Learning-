@@ -291,7 +291,7 @@ color:var(--white);
     order: 3;
   }
 }
-@media (max-width: 1024px) and (min-width: 640px) {
+@media (max-width: 1024px) and (min-width: 640px)   {
   #Services .ServicesCards2::after {
     display: none;
   }
@@ -302,6 +302,30 @@ color:var(--white);
     order: 3;
   }
 }
+@media (max-width: 640px) {
+  #Services .ServicesCards2::after {
+    display: none;
+  }
+  #Services .item1{
+    order: 2;
+  }
+  #Services .item2{
+    order: 3;
+  }
+}
+@media (max-width: 640px) {
+  #Services .ServicesCards1::after {
+    display: none;
+  }
+  #Services .item1{
+    order: 2;
+  }
+  #Services .item2{
+    order: 3;
+  }
+}
+
+
 /* Services Section End */
 
 /* contact section start */
@@ -461,7 +485,7 @@ color:var(--white);
 .buble{
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+      
 }
 
 /* Services */
@@ -470,6 +494,7 @@ color:var(--white);
   background-image: url("../src/assets/SerBgG.png");
  background-repeat: no-repeat;
  background-position: center;
+
 }
 
 /* Quilty Section */

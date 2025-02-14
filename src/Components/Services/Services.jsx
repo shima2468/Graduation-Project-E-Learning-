@@ -34,7 +34,7 @@ export default function Services() {
         </div>
         {/* العنصر الثالث */}
         <div className="flex flex-col items-center text-center ServicesCards1">
-          <div className="text-white w-36 h-36 flex mb-4 bg-icon flex justify-center items-center">
+          <div className="text-white w-36 h-36 flex mb-4 bg-icon  justify-center items-center">
             <i className="fas fa-chalkboard-teacher text-3xl"></i>
           </div>
           <h3 className="text-lg font-bold mb-2 main-color">Online Examination System</h3>
