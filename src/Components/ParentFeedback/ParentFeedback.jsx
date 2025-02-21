@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from  './ExStudnts.module.css'
-
+import styles from  './ParentFeedback.module.css'
 import  Studentp from "../../assets/StudentP.png"
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
@@ -9,8 +8,9 @@ import Pencile from "../../assets/pencil.png"
 import { Link } from 'react-router-dom'
 import Student from '../../assets/Student1.png'
 import Student3 from '../../assets/Student3.png'
-export default function ExStudnts() {
+export default function ParentFeedback() {
   return (
+    <>
     <section className="relative " id="Testimonials">
     <div className="container mx-auto px-4 ">
       {/* Section Header */}
@@ -24,7 +24,7 @@ export default function ExStudnts() {
       {/* Testimonials Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  xl:gap-x-8 lg:gap-x-4 md:gap-x-7 md:gap-y-0 justify-center ">
         {/* Testimonial Card 1 */}
-        <div className="relative StudentEx text-white  rounded-2xl flex flex-col  ">
+        <div className="relative ParentFeedback text-white  rounded-2xl flex flex-col  ">
                 <div className="flex items-center justify-center flex-col md:p-8 p-20 ">
           
                       <p className="text-sm leading-relaxed">
@@ -40,7 +40,7 @@ export default function ExStudnts() {
   
   
         {/* Testimonial Card 2 */}
-        <div className="relative StudentEx2 text-white  rounded-2xl flex flex-col  ">
+        <div className="relative ParentFeedback2 text-white  rounded-2xl flex flex-col  ">
                 <div className="flex items-center justify-center flex-col md:p-8 p-20">
           
                       <p className="text-sm leading-relaxed">
@@ -55,7 +55,7 @@ export default function ExStudnts() {
         </div>
   
         {/* Testimonial Card 3 */}
-        <div className="relative StudentEx text-white  rounded-2xl flex flex-col  ">
+        <div className="relative ParentFeedback text-white  rounded-2xl flex flex-col  ">
                 <div className="flex items-center justify-center flex-col md:p-8 p-20">
           
                       <p className="text-sm leading-relaxed">
@@ -73,6 +73,6 @@ export default function ExStudnts() {
       </div>
     </div>
   </section>
-  
+    </>
   )
 }

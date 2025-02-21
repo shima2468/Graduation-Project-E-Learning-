@@ -69,7 +69,8 @@ export default function Navbar() {
         {/* Nav Section Start */}
 
         <div className="bg-white shadow-md py-6 md:py-2 rounded-lg ">
-          <nav className="container mx-auto flex flex-wrap justify-between items-center px-4">
+        <nav className="container mx-auto flex flex-row justify-between items-center px-4 lg:flex-nowrap lg:gap-x-6">
+
             {/* Logo */}
             <div className="flex items-center ">
               <img src={logo2} alt="Logo" className="w-[80px] md:w-[100px] " />
@@ -79,37 +80,38 @@ export default function Navbar() {
             </div>
 
             {/* Links - تظهر فقط على الشاشات الكبيرة */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div>
+            <div className="hidden lg:flex items-center xl:gap-x-4 lg:gap-x-3">
               <Link
                 to="home"
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="text-gray-700 hover:text-[#84BA3F] transition-colors cursor-pointer"
+                className="text-gray-700 hover:text-[#84BA3F] xl:text-base lg:text-sm transition-colors cursor-pointer"
               >
                 Home
               </Link>
               <Link
                 to="about-us"
-                className="text-gray-700 hover:text-[#84BA3F] transition-colors"
+                className="text-gray-700 hover:text-[#84BA3F] xl:text-base lg:text-sm transition-colors"
                 smooth={true}
                 duration={500}
                 offset={-80}
               >
-                About Us
+                About 
               </Link>
               <Link
                 to="AcademicStage"
-                className="text-gray-700 hover:text-[#84BA3F] transition-colors"
+                className="text-gray-700 hover:text-[#84BA3F] xl:text-base lg:text-sm transition-colors"
                 smooth={true}
                 duration={500}
                 offset={-100}
               >
-                Academic Levels
+                 Levels
               </Link>
               <Link
                 to="courses"
-                className="text-gray-700 hover:text-[#84BA3F] transition-colors"
+                className="text-gray-700 hover:text-[#84BA3F] xl:text-base lg:text-sm transition-colors"
                 smooth={true}
                 duration={500}
                 offset={-100}
@@ -118,7 +120,7 @@ export default function Navbar() {
               </Link>
               <Link
                 to="Teachers"
-                className="text-gray-700 hover:text-[#84BA3F] transition-colors"
+                className="text-gray-700 hover:text-[#84BA3F] xl:text-base lg:text-sm transition-colors"
                 smooth={true}
                 duration={500}
                 offset={-50}
@@ -127,28 +129,30 @@ export default function Navbar() {
               </Link>
               <Link
                 to="Contact"
-                className="text-gray-700 hover:text-[#84BA3F] transition-colors"
+                className="text-gray-700 hover:text-[#84BA3F] xl:text-base lg:text-sm transition-colors"
                 smooth={true}
                 duration={500}
                 offset={-80}
               >
-                Contact Us
+                Contact 
               </Link>
             </div>
+            </div>
+           
 
             {/* Right Side */}
             <div className="flex items-center space-x-3">
               <div className="hidden min-[768px]:flex items-center space-x-2 px-3 py-2 rounded-lg">
-                <div className="w-[60px] h-[60px] border-[#84BA3F] border-2 rounded-full flex justify-center items-center">
-                  <div className="p-2 bg-[#84BA3F] rounded-full w-[50px] h-[50px] flex justify-center items-center">
+                <div className="xl:w-[60px] xl:h-[60px] lg:w-[50px] lg:h-[50px] md:w-[40px] md:h-[40px]  border-[#84BA3F] border-2 rounded-full flex justify-center items-center">
+                  <div className="p-2 bg-[#84BA3F] rounded-full xl:w-[50px] xl:h-[50px] lg:w-[40px] lg:h-[40px] md:h-[30px] md:w-[30px] flex justify-center items-center">
                     <i className="fa-solid fa-phone text-white text-sm"></i>
                   </div>
                 </div>
                 <div>
-                  <span className="text-md text-gray-500">Call Us Now</span>
+                  <span className="xl:text-base lg:text-sm  text-gray-500">Call Us Now</span>
                   <a
                     href="tel:+2085550112"
-                    className="block text-md font-semibold text-gray-700 hover:text-[#84BA3F]"
+                    className="block xl:text-base lg:text-sm  font-semibold text-gray-700 hover:text-[#84BA3F]"
                   >
                     +208-555-0112
                   </a>
@@ -159,12 +163,12 @@ export default function Navbar() {
               <div className="flex items-center space-x-2">
                 <button
                   onClick={togglePopup}
-                  className="text-xs md:text-sm px-3 md:px-4 py-1 md:py-2 bg-[#84BA3F] text-white rounded-xl hover:bg-[#658e30] transition-colors"
+                  className="text-xs md:text-sm xl:px-3 lg:px-2 lg:py-2 px-4 xl:py-2 py-2 bg-[#84BA3F] text-white rounded-xl hover:bg-[#658e30] transition-colors"
                 >
                   SIGN UP
                 </button>
                 <Link to="LogIn">
-                  <button className="text-xs md:text-sm px-3 md:px-4 py-1 md:py-2 text-[#84BA3F] border border-[#84BA3F] rounded-xl hover:bg-[#84BA3F] hover:text-white transition-colors">
+                  <button className="text-xs md:text-sm lg:px-2 lg:py-2 xl:px-3 px-4 xl:py-2 py-2 text-[#84BA3F] border border-[#84BA3F] rounded-xl hover:bg-[#84BA3F] hover:text-white transition-colors">
                     LOGIN
                   </button>
                 </Link>

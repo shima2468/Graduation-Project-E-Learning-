@@ -8,15 +8,6 @@
   --white: #fff;
   --theme: #84BA3F;
   --theme2: #20222E;
-  --header: #385469;
-  --text: #5C707E;
-  --text-2: #ffffffcc;
-  --border: #E5E5E5;
-  --border2: #242449;
-  --border3: #5262FF;
-  --bg: #F4EEE5;
-  --bg2: #EFF5F6;
-  --bg3: #70A6B1;
   --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
 }
 
@@ -79,12 +70,15 @@ body::-webkit-scrollbar-thumb:hover {
   height: 1.7px;
 }
 
+.Icon{
+  color: var(--theme);
+}
 
 
 
 
 
-/* Nav */
+/* Nav section start */
 .upper-Nav{
   background-color: var(--theme2);
 }
@@ -121,25 +115,13 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
   border-radius: 16px; 
 }
-/* Nav */
+/* Nav section end */
 
-/* Hero */
-
-
-
-
-
-
-.Icon{
-   color: var(--theme);
-}
 
 /* About Section Start*/
-
 .animate-image {
 
   animation: moveLeftAndBack 2s ease-in-out infinite;
-
 }
 
 @keyframes moveLeftAndBack {
@@ -158,7 +140,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-
+/* Courses Section start */
 
 .Courses-card{
      background-image: url("../src/assets/cardImg1.png");
@@ -166,18 +148,6 @@ body::-webkit-scrollbar-thumb:hover {
      background-repeat: no-repeat;
      position: relative;
     
-}
-.Courses-card::before{
-  content: "";
-  background-image: url('assets/hung.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  top:-1%;
-  left: 45%;
-  
-
 }
 
 .grid1 {
@@ -204,7 +174,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-/*courses Section Start  */
+/*courses Section End  */
 
 /* Teacher Section Start */
 #Teachers .Teacher-header{
@@ -214,7 +184,6 @@ body::-webkit-scrollbar-thumb:hover {
 #Teachers .social:hover i{
 color:var(--white);
 }
-
 
 .slick-dots .slick-active div {
   background: #84BA3F !important; 
@@ -242,9 +211,6 @@ color:var(--white);
   border-radius: 50%;
  
 }
-
-
-
 
 /* Teacher Section End */
 
@@ -351,6 +317,9 @@ color:var(--white);
   z-index:-1;
   top:40%;
 }
+
+/* contact section End */
+
 /* Footer */
 
 .border-navyBlue {
@@ -397,31 +366,31 @@ color:var(--white);
   transform: rotate(-55deg);
   width: 60%;
   height: 60%;
-  left: 6%;
+  left: -10%;
   top: -20%;
   display: block;
 
-  /* تصغير السهم للشاشات المتوسطة */
-  @media (max-width: 1024px) { /* يشمل md و sm */
-      display:none;
-  }
+ 
 
-  /* تصغير أكبر للشاشات الصغيرة جدًا */
-  @media (max-width: 768px) {
-    width: 20%;
-    height: 20%;
-    left: -4%;
-    top: 7%;
-    transform: rotate(-20deg);
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hero-content .right-section::before {
+      width: 400%;
+      height: 40%;
+      left: 40%;
+      top: 10%;
+      transform: rotate(-30deg);
+    }
   }
-
-  /* تكبير السهم للشاشات الكبيرة */
-  @media (min-width: 1280px) {
-    width: 70%;
-    height: 70%;
-    left: 5%;
-    top: -25%;
-  }
+  
+  /*  للشاشات الكبيرة (أكبر من 1024px) */
+  @media (min-width: 1025px) {
+    .hero-content .right-section::before {
+      width: 80%;
+      height: 80%;
+      left: -20%;
+      top: -30%;
+    }
+}
 }
 
 
@@ -434,12 +403,6 @@ color:var(--white);
   padding: 0;
 }
 
-/* @media (max-width: 1024px) {
-  .hero-desc {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-} */
 
 @media (max-width: 768px) {
   .hero-desc {
@@ -468,19 +431,9 @@ color:var(--white);
   .hero-button .button1{
       padding: 0.75rem  3rem;
   }
-  /* .bgHero{
-    display: none;
-  } */
-  /* .right-section{
-    display: none;
-  } */
-  .dots{
-    display: none;
-  }
+
 }
 
-
-/* Hero section end */
 
 .buble{
       background-repeat: no-repeat;
@@ -506,9 +459,9 @@ color:var(--white);
  
 }
 
-/* Exelent Student */
+/* Feedback Parent */
 
-.StudentEx {
+.ParentFeedback {
   background-image: url("../src/assets/Group 1663.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -520,7 +473,7 @@ color:var(--white);
   min-height: 270px;
   
 }
-.StudentEx2 {
+.ParentFeedback2 {
   background-image: url("../src/assets/Group\ 1664.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -533,8 +486,8 @@ color:var(--white);
   
 }
 
-.StudentEx p,
-.StudentEx2 p {
+.ParentFeedback p,
+.ParentFeedback2 p {
   max-width: 90%; 
   word-wrap: break-word; 
   overflow-wrap: break-word;

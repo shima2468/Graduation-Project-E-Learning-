@@ -12,77 +12,69 @@ import High from "../../assets/highSchool.jpg"
 export default function AcademicStages() {
 
   return (
-    <section className="relative " id="AcademicStage">
-   
-                 <div className="container mx-auto py-16 relative px-4">
-                 <div className="flex flex-col items-center justify-center">
-                      <h3 className="second-color text-xl font-semibold Section-header uppercase">
-                        Our Programer
-                      </h3>
-                      <h2 className="text-4xl font-bold main-color my-6 tracking-wider text-center">
-                        Our programs are designed to suit <br /> each student’s academic level.
-                      </h2>
-                    </div>
-                  
-                    {/* القسم الخاص بالكروت */}
-                    <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-0">
-                      {/* الكارت الأول */}
-                      <div className="buble relative pb-28" style={{ backgroundImage: `url(${bgImage})` }}>
-                        <div className="rounded-t-[900px] flex justify-center">
-                          <img src={Primary} alt="English Class" className="w-[280px] h-[270px] rounded-full pt-14" />
-                        </div>
-                        <div className="flex flex-col justify-center items-center">
-                          <h3 className="text-white text-2xl font-bold mt-6">Primary Stage</h3>
-                          <p className="text-white text-md font-medium mt-2">We teach students from (6-12 years)</p>
-                          <p className="text-white text-sm mt-4 text-center px-12">
-                          
-                            We provide a fun and engaging learning experience for young students to build foundational skills and curiosity.
-                          </p>
-                        </div>
-                        <button className="absolute left-[38%] top-[87%] bg-[#20222E] text-white rounded-full p-4 shadow-lg">
-                          →
-                        </button>
+    <section className="relative py-8 " id="AcademicStage">
+    <div className="container mx-auto px-4 py-16 ">
+      {/* Section Header */}
+                <div className="flex flex-col items-center justify-center text-center w-full gap-y-6 pb-8">
+                              <h3 className="second-color xl:text-xl lg:text-lg font-semibold Section-header uppercase">Our Program</h3>
+                              <h2 className="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl font-bold text-[#20222E] xl:py-2 tracking-wider">
+                                Our programs are designed to suit <br /> each student’s academic level.
+                              </h2>
+              </div>
+            
+                {/* Academic Stages Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:gap-x-8 lg:gap-x-4 lg:gap-y-0 md:gap-y-12 md:gap-x-7 sm:gap-y-12 justify-center ">
+                  {/* Primary Stage */}
+                  <div className="pt-[-40%] relative text-white rounded-2xl flex flex-col items-center bg-contain bg-no-repeat bg-center  justify-start  min-h-[450px]" style={{ backgroundImage: `url(${bgImage})` }}>
+                      <div className="rounded-t-[900px] flex justify-center">
+                        <img src={Primary} alt="English Class" className="xl:w-[280px] xl:h-[240px] lg:w-[240px] lg:h-[220px] md:w-[260px] md:h-[240px] sm:w-[280px] sm:g-[240px] lg:pt-10 md:pt-8 sm:pt-4  rounded-full xl:pt-4" />
                       </div>
-                  
-                      {/* الكارت الثاني */}
-                      <div className="buble relative pb-28" style={{ backgroundImage: `url(${bgImage2})` }}>
-                        <div className="overflow-hidden w-full rounded-t-[900px] flex justify-center">
-                          <img src={middel} alt="Chemistry Class" className="w-[280px] h-[270px] rounded-full pt-14" />
-                        </div>
-                        <div className="flex flex-col justify-center items-center">
-                          <h3 className="text-white text-2xl font-bold mt-6 ">Middel Stage</h3>
-                          <p className="text-white text-sm font-medium mt-2">We teach students from (Grade 7-9)</p>
-                          <p className="text-white text-sm mt-4 text-center px-12">
-                          We help students enhance critical thinking, problem-solving, and academic skills for a successful future
-                          </p>
-                        </div>
-                        <button className="absolute left-[38%] top-[87%] bg-[#84BA3F] text-white rounded-full p-4 shadow-lg">
-                          →
-                        </button>
+                    <h3 className="xl:text-2xl lg:text-xl md:text-md sm:text-2xl font-bold mt-4">High Stage</h3>
+                    <p className="xl:text-sm lg:text-xs md:text-sm sm:text-sm  mt-2">We teach students from (Grade 10-12)</p>
+                    <p className="xl:text-sm lg:text-xs md:text-sm sm:text-sm mt-4 text-center md:px-14 sm:px-40">
+                      We prepare students for higher education and career paths with advanced learning and skill development.
+                    </p>
+                    <button className="absolute md:left-[38%] xl:top-[92%] lg:top-[87%] md:top-[92%] sm:top-[91%] sm:left-[42%] bg-[#20222E] text-white rounded-full p-4 shadow-lg">
+                    →
+                  </button>
+                  </div>
+            
+                  {/* Middle Stage */}
+                  <div className="pt-[-40%] relative text-white rounded-2xl flex flex-col items-center bg-contain bg-no-repeat bg-center  justify-start  min-h-[450px]" style={{ backgroundImage: `url(${bgImage2})` }}>
+                      <div className="rounded-t-[900px] flex justify-center">
+                        <img src={middel} alt="English Class" className="xl:w-[280px] xl:h-[240px] lg:w-[240px] lg:h-[220px] md:w-[260px] md:h-[240px] sm:w-[280px] sm:g-[240px] lg:pt-10 md:pt-8 sm:pt-4  rounded-full xl:pt-4" />
                       </div>
-                  
-                      {/* الكارت الثالث */}
-                      <div className="buble relative pb-28" style={{ backgroundImage: `url(${bgImage})` }}>
-                        <div className="overflow-hidden w-full rounded-t-[900px] flex justify-center">
-                          <img src={High} alt="Chemistry Class" className="w-[280px] h-[270px] rounded-full pt-14" />
-                        </div>
-                        <div className="flex flex-col justify-center items-center">
-                          <h3 className="text-white text-2xl font-bold mt-6">High Stage</h3>
-                          <p className="text-white text-sm font-medium mt-2">We teach students from (Grade 10-12)</p>
-                          <p className="text-white text-sm mt-4  text-center px-12">
-                            
-                                We prepare students for higher education and career paths with advanced learning and skill development.
-                          </p>
-                        </div>
-                        <button className="absolute left-[38%] top-[87%] bg-[#20222E] text-white rounded-full p-4 shadow-lg">
-                          →
-                        </button>
+                    <h3 className="xl:text-2xl lg:text-xl md:text-md sm:text-2xl font-bold mt-4">Middel Stage</h3>
+                    <p className="xl:text-sm lg:text-xs md:text-sm sm:text-sm  mt-2">We teach students from (Grade 10-12)</p>
+                    <p className="xl:text-sm lg:text-xs md:text-sm sm:text-sm mt-4 text-center md:px-14 sm:px-40">
+                    We help students enhance critical thinking, problem-solving, and academic skills for a successful future
+                    </p>
+                    <button className="absolute md:left-[38%] xl:top-[92%] lg:top-[87%] md:top-[92%] sm:top-[91%] sm:left-[42%] bg-[#84BA3F] text-white rounded-full p-4 shadow-lg">
+                    →
+                  </button>
+                  </div>
+            
+            
+                  {/* High Stage */}
+                  <div className="pt-[-40%] relative text-white rounded-2xl flex flex-col items-center bg-contain bg-no-repeat bg-center  justify-start  min-h-[450px]" style={{ backgroundImage: `url(${bgImage})` }}>
+                      <div className="rounded-t-[900px] flex justify-center">
+                        <img src={High} alt="English Class" className="xl:w-[280px] xl:h-[240px] lg:w-[240px] lg:h-[220px] md:w-[260px] md:h-[240px] sm:w-[280px] sm:g-[240px] lg:pt-10 md:pt-8 sm:pt-4  rounded-full xl:pt-4" />
                       </div>
-                    </div>
-                 </div>
-  
-                    
+                    <h3 className="xl:text-2xl lg:text-xl md:text-md sm:text-2xl font-bold mt-4">High Stage</h3>
+                    <p className="xl:text-sm lg:text-xs md:text-sm sm:text-sm  mt-2">We teach students from (Grade 10-12)</p>
+                    <p className="xl:text-sm lg:text-xs md:text-sm sm:text-sm mt-4 text-center md:px-14 sm:px-40">
+                    We prepare students for higher education and career paths with advanced learning and skill development.
+                    </p>
+                    <button className="absolute md:left-[38%] xl:top-[92%] lg:top-[87%] md:top-[92%] sm:top-[91%] sm:left-[42%] bg-[#20222E] text-white rounded-full p-4 shadow-lg">
+                    →
+                  </button>
+                  </div>
+            
+                </div>
+      </div>
   </section>
+  
+  
   
 
   
