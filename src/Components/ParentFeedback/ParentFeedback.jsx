@@ -8,16 +8,21 @@ import Pencile from "../../assets/pencil.png"
 import { Link } from 'react-router-dom'
 import Student from '../../assets/Student1.png'
 import Student3 from '../../assets/Student3.png'
+import { useTranslation } from "react-i18next";
+
 export default function ParentFeedback() {
+        const {t} = useTranslation();
+  
   return (
     <>
     <section className="relative " id="Testimonials">
     <div className="container mx-auto px-4 ">
       {/* Section Header */}
-      <div className="flex flex-col ms-6 text-center w-full">
-        <h3 className="text-[#84BA3F] md:text-xl sm:text-lg font-semibold">Testimonials</h3>
-        <h2 className="xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl font-bold text-[#20222E] xl:py-6 tracking-wider">
-          Parents' Words Are The Key <br /> To Happy Kids
+      <div className="flex flex-col ms-6 text-center w-full justify-center items-center">
+        <h3 className="text-[#84BA3F] md:text-xl sm:text-lg font-semibold Section-header "> {t('Testimonials.header')}</h3>
+        <h2 className="xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl font-bold text-[#20222E] py-6 tracking-wider">
+         
+          {t('Testimonials.subheader')}
         </h2>
       </div>
   
@@ -28,11 +33,10 @@ export default function ParentFeedback() {
                 <div className="flex items-center justify-center flex-col md:p-8 p-20 ">
           
                       <p className="text-sm leading-relaxed">
-                        Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi.
-                      </p>
+                      {t('Testimonials.testimonial1.text')}                      </p>
                       <div className="flex justify-center items-center">
                         <hr className="border-t-2 border-white my-4 w-4  me-2" />
-                        <p className="font-bold text-center">Wade Warren</p>
+                        <p className="font-bold text-center">{t('Testimonials.testimonial1.name')}</p>
                       </div>
                 </div>
          
@@ -44,11 +48,12 @@ export default function ParentFeedback() {
                 <div className="flex items-center justify-center flex-col md:p-8 p-20">
           
                       <p className="text-sm leading-relaxed">
-                        Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi.
+                      {t('Testimonials.testimonial2.text')}
                       </p>
                       <div className="flex justify-center items-center">
                         <hr className="border-t-2 border-white my-4 w-4  me-2" />
-                        <p className="font-bold text-center">Wade Warren</p>
+                        <p className="font-bold text-center"> {t('Testimonials.testimonial2.name')}
+                        </p>
                       </div>
                 </div>
          
@@ -59,11 +64,11 @@ export default function ParentFeedback() {
                 <div className="flex items-center justify-center flex-col md:p-8 p-20">
           
                       <p className="text-sm leading-relaxed">
-                        Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi.
+                      {t('Testimonials.testimonial3.text')}
                       </p>
                       <div className="flex justify-center items-center">
                         <hr className="border-t-2 border-white my-4 w-4  me-2" />
-                        <p className="font-bold text-center">Wade Warren</p>
+                        <p className="font-bold text-center">{t('Testimonials.testimonial3.name')}</p>
                       </div>
                 </div>
          

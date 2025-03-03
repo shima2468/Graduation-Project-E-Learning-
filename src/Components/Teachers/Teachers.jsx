@@ -9,65 +9,70 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Pencile from "../../assets/pencil.png"
 import { Link } from 'react-router-dom'
+import { useTranslation } from "react-i18next";
+
 export default function Teachers() {
+      const {t} = useTranslation();
   
-  function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "4%",
-          height: "4%",
-          background: "#84BA3F",
-          borderRadius: "23px",
-          border: "1px solid #84BA3F",
-          cursor: "pointer",
-          position:'absolute',
-          top:"-20%",
-          right:"1%",
-          padding:"2%"
-          
-        }}
-        onClick={onClick}
-      >
-      
-      </div>
-    );
-  }
-  function SamplePrevArrow(props) {
-
-
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={`${className} `}
-        style={{
-          ...style,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "4%",
-          height: "4%",
-          background: "#84BA3F",
-          borderRadius: "23px",
-          border: "1px solid #84BA3F",
-          cursor: "pointer",
-          position:'absolute',
-          top:"-20%",
-          left:"90%",
-          padding:"2%"
-        }}
-        onClick={onClick}
-      >
-      
-      </div>
-    );
-  }
+      function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        const isRTL = document.documentElement.dir === "rtl"; // التحقق من الاتجاه
+    
+        return (
+            <div
+                className={className}
+                style={{
+                    ...style,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "4%",
+                    height: "4%",
+                    background: "#84BA3F",
+                    borderRadius: "23px",
+                    border: "1px solid #84BA3F",
+                    cursor: "pointer",
+                    position: "absolute",
+                    top: "-20%",
+                    right: isRTL ? "40%" : "1%",  
+                    padding: "2%",
+                    marginLeft:"2.5%"
+                }}
+                onClick={onClick}
+            >
+            </div>
+        );
+    }
+    
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        const isRTL = document.documentElement.dir === "rtl"; // التحقق من الاتجاه
+    
+        return (
+            <div
+                className={className}
+                style={{
+                    ...style,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "4%",
+                    height: "4%",
+                    background: "#84BA3F",
+                    borderRadius: "23px",
+                    border: "1px solid #84BA3F",
+                    cursor: "pointer",
+                    position: "absolute",
+                    top: "-20%",
+                    left: isRTL ? "5%" : "90%", // تعديل الموقع بناءً على الاتجاه
+                    padding: "2%"
+                }}
+                onClick={onClick}
+            >
+            </div>
+        );
+    }
+    
  
   const settings = {
     dots: true,
@@ -149,10 +154,10 @@ export default function Teachers() {
               
                 <div className='flex flex-col justify-center  Teacher-header md:px-4'>
                                 <h3 className="second-color xl:text-xl lg:text-lg md:text-md sm:text-sm font-semibold Section-header uppercase">
-                                Our teachers
+                                {t('Teachers.header')}
                               </h3>
                               <h2 className="xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold main-color my-6  tracking-wider ">
-                                   Our Expert teachers
+                              {t('Teachers.subheader')}
                               </h2>
                 </div>
                
@@ -168,10 +173,10 @@ export default function Teachers() {
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
                                         <h4 className="mb-2 text-2xl font-bold tracking-tight main-color dark:text-white">
-                                          Ali Ahmed
+                                        {t('Teachers.teacher1.name')}
                                         </h4>
                                         <h5 className="text-[#20222E] -ms-[16px]">
-                                          Mathematics Teacher
+                                        {t('Teachers.teacher1.title')}
                                         </h5>
                                       </a>
                                     </div>
@@ -201,10 +206,10 @@ export default function Teachers() {
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
                                         <h4 className="mb-2 text-2xl font-bold tracking-tight main-color dark:text-white">
-                                          Ali Ahmed
+                                        {t('Teachers.teacher2.name')}
                                         </h4>
                                         <h5 className="text-[#20222E] -ms-[16px]">
-                                          Mathematics Teacher
+                                        {t('Teachers.teacher2.title')}
                                         </h5>
                                       </a>
                                     </div>
@@ -234,10 +239,10 @@ export default function Teachers() {
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
                                         <h4 className="mb-2 text-2xl font-bold tracking-tight main-color dark:text-white">
-                                          Ali Ahmed
+                                        {t('Teachers.teacher3.name')}
                                         </h4>
                                         <h5 className="text-[#20222E] -ms-[16px]">
-                                          Mathematics Teacher
+                                        {t('Teachers.teacher3.title')}
                                         </h5>
                                       </a>
                                     </div>
@@ -266,10 +271,10 @@ export default function Teachers() {
                                     <div className="p-5 flex text-center justify-center items-center">
                                       <a href="#">
                                         <h4 className="mb-2 text-2xl font-bold tracking-tight main-color dark:text-white">
-                                          Ali Ahmed
+                                        {t('Teachers.teacher4.name')}
                                         </h4>
                                         <h5 className="text-[#20222E] -ms-[16px]">
-                                          Mathematics Teacher
+                                        {t('Teachers.teacher4.title')}
                                         </h5>
                                       </a>
                                     </div>

@@ -1,14 +1,191 @@
 {
-    "address": "6391 Elgin St. Celina, USA",
-    "followUs": "Follow Us On:",
-    "siteName": "Online Education",
-    "home": "Home",
-    "about": "About Us",
-    "academicLevels": "Academic Levels",
-    "courses": "Courses",
-    "teachers": "Teachers",
-    "contact": "Contact Us",
-    "signUp": "SIGN UP",
-    "login": "LOGIN",
-    "email" :"onlineEducation@gmail.com"
+  "address": "Palestine. Gaza , West Bank",
+  "followUs": "Follow Us On:",
+  "Logo": "Logo",
+  "English": "English",
+  "Arabic": "Arabic",
+  "siteName": "School management",
+  "home": "Home",
+  "aboutus": "About",
+  "academicLevels": "Stages",
+  "course": "Courses",
+  "teachers": "Teachers",
+  "contact": "Contact",
+  "callus": "Call Us Now",
+  "login": "LOGIN",
+  "email" :"SchoolManagement@gmail.com",
+"hero": {
+"Background" :"Background",
+"Image" :"Image",
+"Image2" :"Image2",
+"Image3" :"Image3",
+  "welcom" :"Your journey to a bright future begins here!",
+  "start" :"Start Your  Journey",
+  "from" :"from",
+  "day" :"Day One",
+  "learn" :"Learn Smart, Grow with Confidence – ",
+  "platform" :"Your Trusted Platform for Academic Success!",
+  "explore" :"Explore More →",
+  "get" :"Get In Touch →"
+},
+    "services": {
+      "title": "How it Works",
+      "academic_organization": {
+        "title": "Academic Management",
+        "description": "Organizing student registration, academic classification, and class assignment, while providing attendance and grade records in an organized manner."
+      },
+      "class_schedules": {
+        "title": "Class Schedules & Examinations",
+        "description": "This module ensures real-time schedule updates and structured exam planning based on course requirements, offering flexible schedule views."
+      },
+      "online_exams": {
+        "title": "Online Learning Integration",
+        "description": "The system connects seamlessly with Zoom for virtual classes, supports lesson recording, and enhances engagement through interactive tools."
+      },
+      "digital_library": {
+        "title": "Digital Library System",
+        "description": "This feature organizes educational resources by course and grade levels, allowing students to access and download materials anytime."
+      }
+    },
+      "about": {
+        "image1": "About Image1",
+        "image2": "About Image2",
+        "image3": "About Image3",
+        "image4": "About Image4",
+        "image5": "About Image5",
+        "title": "Why choose us?",
+        "subtitle": "Simplifying the learning journey for all",
+        "description": "We provide an advanced School Management System that streamlines operations and enhances the educational experience, ensuring a seamless and efficient learning environment for all.",
+        "features": {
+          "flexible_learning": "Flexible learning",
+          "creative_environment": "Creative Environment",
+          "professional_staff": "Professional Staff",
+          "instant_access": "Instant Access"
+        },
+        "explore_button": "Contact us →",
+        "call_us": "Call Us Now",
+        "phone_number": "+000-000-000"
+      },
+        "academicStages": {
+          "title": "Our stages",
+          "subtitle": "A complete learning journey for all academic stages.",
+          "primary": {
+            "title": "Primary Stage",
+            "age": "We teach students from Grade (1-6)",
+            "description": "We provide an engaging learning experience that builds foundational skills, sparks curiosity, and fosters a love for learning."
+          },
+          "middle": {
+            "title": "Middle Stage",
+            "age": "We teach students from Grade (7-9)",
+            "description": "We support students in developing critical thinking and problem-solving skills, enhancing their readiness for a successful academic future."
+          },
+          "high": {
+            "title": "High Stage",
+            "age": "We teach students from Grade (10-12)",
+            "description": "We prepare students for higher education and career paths with advanced learning and skill development."
+          }
+        },
+          "courses": {
+            "popularCourses": "Our Featured Courses ",
+            "discoverCourse": "Explore Your Educational Path",
+            "arabicClass": "Arabic Class",
+            "arabicDescription": "Let’s explore the magic of the Arabic language and its deep-rooted culture!",
+            "englishClass": "English Class",
+            "englishDescription": "Build strong communication skills and gain confidence in the world’s most spoken language.",
+            "mathClass": "Math Class",
+            "mathDescription": "Discover the joy of numbers and sharpen problem-solving skills in an interactive way!",
+            "ageRange": "Learn without restrictions",
+            "weeklyA": "Weekly: daily",
+            "weeklyE":"weekly:4 days",
+            "weeklyM" :"weekly:5 days"
+          },
+"Teachers": {
+  "header": "Our teachers",
+  "subheader": "Our Expert teachers",
+  "teacher1": {
+    "name": "Ali Ahmed",
+    "title": "Mathematics Teacher",
+    "image": "Teacher Image1"
+  },
+  "teacher2": {
+    "name": "Noor Al-Sayed",
+    "title": "Arabic teacher",
+    "image": "Teacher Image2"
+  },
+  "teacher3": {
+    "name": "Layla Mahmoud",
+    "title": "Physics teacher",
+    "image": "Teacher Image3"
+  },
+  "teacher4": {
+    "name": "Khaled Ibrahim",
+    "title": "Chemistry teacher",
+    "image": "Teacher Image4"
   }
+},
+  "Testimonials": {
+    "header": "Testimonials",
+    "subheader": "Words from Parents: Shaping Brighter Futures",
+    "testimonial1": {
+      "text": "“ This platform has provided the best educational experience for my kids, helping them improve academically and socially ”",
+      "name": "Fatima Ali"
+    },
+    "testimonial2": {
+      "text": "“ Our children have benefited greatly from the available online classes, and the teachers were very professional ”",
+      "name": "Mohammed Hassan"
+    },
+    "testimonial3": {
+      "text": "“ The education on this platform is outstanding, and parents can easily track their children's progress ”",
+      "name": "Sarah Mahmoud"
+    }
+  },
+    "ContactUs": {
+      "educationTitle": "School management",
+      "callUsTitle": "Call Us 24/7",
+      "callUsNumber": "+000-000-000",
+      "makeAQuoteTitle": "Make a Quote",
+      "makeAQuoteEmail": "SchoolManagement@gmail.com",
+      "locationTitle": "Location",
+      "locationAddress": "Palestine. Gaza , West Bank",
+      "contactUs": "Contact Us",
+      "getInTouch": "Get in Touch",
+      "description": "We are always here to support you! Feel free to reach out anytime, and we’ll be happy to answer your inquiries and assist you in the best possible way.",
+      "nameLabel": "Your name*",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Your Email*",
+      "emailPlaceholder": "Enter your email",
+      "messageLabel": "Write Message*",
+      "messagePlaceholder": "Write your message here",
+      "sendMessage": "Send Message →"
+    },
+      "Footer": {
+        "logoImage": "School management Logo",
+        "logoText": "School management",
+        "aboutText": "Learn Smart, Grow with Confidence. Your Trusted Platform for Academic Success!",
+        "contactUs": "Contact Us",
+        "quickLinks": "Quick Links",
+        "quickLinksItem1": "Our Services",
+        "quickLinksItem2": "Academic stages",
+        "quickLinksItem4": "Contact Us",
+        "categories": "Categories",
+        "categoriesItem1": "Arabic Class",
+        "categoriesItem2": "English Class",
+        "categoriesItem3": "Math Class",
+        "newsletter": "Newsletter",
+        "newsletterText": "Sign up to searing weekly newsletter to get the latest updates.",
+        "emailPlaceholder": "Enter Email Address",
+        "copyright": "All Copyright 2025 by",
+        "termsAndConditions": "Terms & Condition",
+        "privacyPolicy": "Privacy Policy"
+      }      
+
+  
+
+  
+}
+
+  
+      
+      
+    
+

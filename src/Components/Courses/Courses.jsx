@@ -19,7 +19,12 @@ import line11 from "../../assets/line-3-colored.png"
 import Arabic from "../../assets/Arabic_background_fixed.jpg"
 import English from "../../assets/English_green.jpg"
 import Math from "../../assets/Math2.png"
+import High from "../../assets/highSchool.jpg"
+import { useTranslation } from "react-i18next";
+
 export default function Courses() {
+      const {t} = useTranslation();
+  
   return (
     <>
       
@@ -29,11 +34,10 @@ export default function Courses() {
 
                         <div className="flex flex-col justify-center mb-16 ">
                           <h3 className="second-color text-xl font-semibold Section-header uppercase">
-                            Popular Courses
+                          {t("courses.popularCourses")}
                           </h3>
-                          <h2 className="text-3xl font-bold main-color mt-3 tracking-wider">
-                            Discover Your Course
-
+                          <h2 className="text-2xl font-bold main-color mt-3 tracking-wider">
+                          {t("courses.discoverCourse")}
                           </h2>
                         </div>
 
@@ -44,17 +48,16 @@ export default function Courses() {
                             <div className="relative -mt-12 w-72 h-40 flex items-center justify-center">
                               <img
                                 src={Arabic}
-                                alt="Arabic Class"
+                                alt={t("courses.arabicClass")}
                                 className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
                               />
                             </div>
-                            <h2 className="text-xl font-semibold text-gray-900 mt-4">Arabic Class</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-4">{t("courses.arabicClass")}</h2>
                             <p className="text-gray-600 text-sm text-center mt-2">
-                              Immerse yourself in the beauty of the Arabic language and uncover its profound cultural heritage.
-                            </p>
+                            {t("courses.arabicDescription")}                            </p>
                             <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
-                              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
-                              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
+                              <span className="text-md font-bold text-[#84BA3F]">{t("courses.ageRange")}</span>
+                              <span className="text-md font-bold text-[#84BA3F]">{t("courses.weeklyA")}</span>
                             </div>
                           </div>
 
@@ -63,17 +66,17 @@ export default function Courses() {
                             <div className="relative -mt-12 w-72 h-40 flex items-center justify-center">
                               <img
                                 src={English}
-                                alt="English Class"
+                                alt={t("courses.englishClass")} 
                                 className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
                               />
                             </div>
-                            <h2 className="text-xl font-semibold text-gray-900 mt-4">English Class</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-4">{t("courses.englishClass")}</h2>
                             <p className="text-gray-600 text-sm text-center mt-2">
-                              Master the global language with confidence and enhance your communication skills.
+                            {t("courses.englishDescription")}
                             </p>
                             <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
-                              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
-                              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
+                              <span className="text-md font-bold text-[#84BA3F]">{t("courses.ageRange")}</span>
+                              <span className="text-md font-bold text-[#84BA3F]">{t("courses.weeklyE")}</span>
                             </div>
                           </div>
 
@@ -82,17 +85,17 @@ export default function Courses() {
                             <div className="relative -mt-12 w-72 h-40 flex items-center justify-center">
                               <img
                                 src={Math}
-                                alt="Math Class"
+                                alt={t("courses.mathClass")}
                                 className="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2 shadow-lg"
                               />
                             </div>
-                            <h2 className="text-xl font-semibold text-gray-900 mt-4">English Class</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-4">{t("courses.mathClass")}</h2>
                             <p className="text-gray-600 text-sm text-center mt-2">
-                              Master the global language with confidence and enhance your communication skills.
+                            {t("courses.mathDescription")}
                             </p>
                             <div className="flex justify-between w-full text-gray-700 text-sm mt-4">
-                              <span className="text-md font-bold text-[#84BA3F]">Age: 2-5 y</span>
-                              <span className="text-md font-bold text-[#84BA3F]">Weekly: 5 Days</span>
+                              <span className="xl:text-md  font-bold text-[#84BA3F]">{t("courses.ageRange")}</span>
+                              <span className="text-md font-bold text-[#84BA3F]">{t("courses.weeklyM")}</span>
                             </div>
                           </div>
 
