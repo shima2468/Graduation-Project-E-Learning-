@@ -14,6 +14,9 @@
   "callus": "Call Us Now",
   "login": "LOGIN",
   "email" :"SchoolManagement@gmail.com",
+  "app": {
+    "title": "School Management"
+  },
 "hero": {
 "Background" :"Background",
 "Image" :"Image",

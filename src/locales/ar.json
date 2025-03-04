@@ -15,6 +15,9 @@
   "callus": "اتصل بنا الآن",
   "login": "تسجيل الدخول",
   "email": "SchoolManagement@gmail.com",
+  "app": {
+    "title": "إدارة المدارس"
+  },
 "hero": {
 "Background" :"خلفية",
 "Image" :"صورة",
