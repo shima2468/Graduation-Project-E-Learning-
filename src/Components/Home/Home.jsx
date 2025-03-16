@@ -18,17 +18,15 @@ export default function Home() {
       <ScrollToTop />
       {/* <Preloader/> */}
       {/* Hero Section Start */}
-      <Hero/>
-
+      <Hero />
       {/* Hero Section End */}
       <Services />
       <About />
       <AcademicStages />
       <Courses />
       <Teachers />
-      <ParentFeedback/>
-      <ContactUs/>
-
+      <ParentFeedback />
+      <ContactUs />
       {/* <Activity/> */}
     </>
   );

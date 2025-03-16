@@ -17,18 +17,15 @@ export default function About() {
 
   return (
     <section className="relative sm:py-8 pad-inline" id="about-us">
-    <div>
-        
+    <div>       
         <img src={leftshap} alt={t("about.image1")} className="absolute left-0 xl:w-[50%] xl:h-[92%] lg:w-[50%] lg:h-[90%] md:w-[80%] md:h-[57%] lg:flex rtl:right-0 z-[1] sm:hidden scale-x-100 rtl:scale-x-[-1]" />
         <img 
             src={girlGreen} 
             alt={t("about.image2")} 
-            className="absolute xl:top-0 lg:top-[3%] ltr:right-[5%]  
-             xl:w-[15%] lg:w-[12%] md:w-[15%] sm:w-[20%] 
+            className="absolute xl:top-0 lg:top-[3%] ltr:left-[80%]  
+             xl:w-[15%] lg:w-[12%] md:w-[15%] sm:w-[20%]  
              rtl:scale-x-[-1] rtl:left-[10%] animate-image" 
           />
-
-
     </div>
 
     <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center rtl:space-x-reverse lg:space-x-20 lg:py-0 sm:py-0 md:space-y-4 sm:space-y-4  ">

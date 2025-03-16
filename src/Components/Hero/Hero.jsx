@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from  './Hero.module.css'
 import doll from "../../assets/doll.png";
 import book from "../../assets/book.png";
@@ -8,9 +8,30 @@ import bgHero from "../../assets/bgHero.png";
 import linehero from "../../assets/line-shape-2-green.png";
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-scroll';
+import axios from 'axios';
 
 export default function Hero() {
     const {t} = useTranslation();
+    const [teachers, setTeachers] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    
+    async function getTeachers() {
+      return await axios
+        .get("http://localhost:8000/api/teachers")
+        .then((data) => {
+          console.log(data?.data?.data);
+          setTeachers(data?.data?.data);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.log(error);
+          setIsLoading(false);
+        });
+    }
+    
+    useEffect(() => {
+      getTeachers();
+    }, []);
 
   return (
        <>
