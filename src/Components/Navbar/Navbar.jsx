@@ -29,6 +29,8 @@ export default function Navbar() {
     setIsPopupOpen(!isPopupOpen);
   };
 
+  
+
 
 
 
@@ -41,7 +43,9 @@ export default function Navbar() {
     setShowDropdown(false); 
   };
   
-
+  const handleLogin = () => {
+    window.location.href = 'http://127.0.0.1:8000/LoginOptions'; 
+};
 
 
 
@@ -181,7 +185,7 @@ export default function Navbar() {
             {/* Buttons - يظهران بجانب Burger Menu عند تصغير الشاشة */}
             <div className="flex items-center space-x-2">
               <Link to="LogIn">
-                <button className="text-xs md:text-sm lg:px-2 lg:py-1 xl:px-3 px-4 xl:py-2 py-2 text-[#84BA3F] border border-[#84BA3F] rounded-xl hover:bg-[#84BA3F] hover:text-white transition-colors">
+                <button onClick={handleLogin} className="text-xs md:text-sm lg:px-2 lg:py-1 xl:px-3 px-4 xl:py-2 py-2 text-[#84BA3F] border border-[#84BA3F] rounded-xl hover:bg-[#84BA3F] hover:text-white transition-colors">
                      {t('login')}
                 </button>
               </Link>

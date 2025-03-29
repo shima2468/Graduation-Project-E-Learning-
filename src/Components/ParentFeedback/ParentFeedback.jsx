@@ -44,7 +44,7 @@ export default function ParentFeedback() {
   
   
         {/* Testimonial Card 2 */}
-        <div className="relative ParentFeedback2 text-white  rounded-2xl flex flex-col  ">
+        <div className="relative ParentFeedback text-white  rounded-2xl flex flex-col  ">
                 <div className="flex items-center justify-center flex-col md:p-8 p-20">
           
                       <p className="text-sm leading-relaxed">

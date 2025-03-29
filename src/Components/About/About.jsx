@@ -22,9 +22,9 @@ export default function About() {
         <img 
             src={girlGreen} 
             alt={t("about.image2")} 
-            className="absolute xl:top-0 lg:top-[3%] ltr:left-[80%]  
+            className="absolute xl:top-0 lg:top-[3%] left-[80%]  rtl:left-[10%]  
              xl:w-[15%] lg:w-[12%] md:w-[15%] sm:w-[20%]  
-             rtl:scale-x-[-1] rtl:left-[10%] animate-image" 
+             rtl:scale-x-[-1]  animate-image" 
           />
     </div>
 
